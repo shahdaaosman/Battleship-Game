@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import edu.bu.met.cs665.board.Board;
 
-public class NewGame {
+public class NewGame implements Game{
 
 	//build the singleton pattern
 	private NewGame () {
@@ -19,6 +19,7 @@ public class NewGame {
 		 return SingletonHolder.INSTANCE;
 	}
 	
+	@Override
 	public void startGame() {
 		
 		Board board1 = new Board(1);
@@ -29,8 +30,8 @@ public class NewGame {
 		
 	}
 
-
-	private void play(Player player1, Player player2) {
+	@Override
+	public void play(Player player1, Player player2) {
 		//play if no one win
 		while(!(player1.playerWin(player1.board) ||
 				player2.playerWin(player2.board))) {
@@ -56,7 +57,7 @@ public class NewGame {
 		GameEnd();
 	}
 
-
+	@Override
 	public void GameEnd() {
 		
 		System.out.println("-------- Game over ----------");

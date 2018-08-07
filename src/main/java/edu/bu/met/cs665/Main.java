@@ -1,6 +1,7 @@
 package edu.bu.met.cs665;
 
 
+import edu.bu.met.cs665.entity.Game;
 import edu.bu.met.cs665.entity.NewGame;
 
 public class Main {
@@ -12,7 +13,7 @@ public class Main {
   public static void main(String[] args) {
 
 	  //Create a single game object
-		NewGame game = NewGame.getInstance();
+		Game game = NewGame.getInstance();
 		game.startGame();
 
 }

@@ -57,6 +57,7 @@ public class Player {
         System.out.print("Enter column number from (1 - 5): ");
         shoot[1] = input.nextInt();
         shoot[1]--;
+        
 
         
     }
@@ -64,6 +65,7 @@ public class Player {
     public static boolean hit(int[] shoot, Board board){
     
         for(int ship=0 ; ship<board.getShips().length ; ship++){
+        	
             if( shoot[0]==board.getShips()[ship][0] &&
             		shoot[1]==board.getShips()[ship][1]){
                 System.out.print("You hit a ship ");
@@ -88,16 +90,35 @@ public class Player {
 	
     public void playerRound() {
     	System.out.println("Player "+id+" turn :");
+    	while(true){
 		shoot(shoot);
+		if (checkShoot(shoot,board)== true) {
+			break;
+		}
+		}
 		updateboard(shoot,board);
     }	
 	
-    public static void updateboard(int[] shoot, Board board){
+    private boolean checkShoot(int[] shoot, Board board) {
+    	 if( board.getBoard()[shoot[0]][shoot[1]]== -1){
+             return true;
+         }else {
+        	 System.out.println("You already shoot this location"
+        	 		+ " , try again!");
+        	 return false;
+        	 
+         }
+		
+	}
+
+	public static void updateboard(int[] shoot, Board board){
     	int[][] theBoard =board.getBoard();
+    	//while(board.getShips()[shoot[0]][shoot[1]]== -1){
         if(hit(shoot,board))
         	 theBoard[shoot[0]][shoot[1]]=1;
         else
         	 theBoard[shoot[0]][shoot[1]]=0;
         board.setBoard(theBoard); 
+    	
     }
 }
