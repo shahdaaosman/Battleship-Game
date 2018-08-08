@@ -1,11 +1,38 @@
-# Project Template
+# Battleship Game
+A Battle game is a guessing game and is played on a grid (called board).
+Each player tries to guess the positions of the battleships of
+the other player to call “Shots” and destroy the battleships. 
+The winner is the player who can first destroy all ships of the other player.
 
-This is a Java Maven Project Template
+
+# Features implemented
+<p>This project was built using two design pattern:</p>
+  <p>1-Singelton Design Pattern.</p>
+  This design pattern help to Ensure that game class has only one instance, and provide a global point of access to it.
+  <p>2-Simple Factory Design Pattern.</p>
+  This allows interfaces for creating objects without exposing the object creation logic to the client.
+
+# Implementation Details
+There is a 5x5 board with 3 hidden ships for 2 player.
+The objective of the game is the player should figuring out where these ships are placed and hit them.
+Every shot fired is said if a ship was hit. Then the next player have his turn.
+The player who find and sink the 3 ships win the game.
+
+Board Legend:
+-: Water in the block. Still not been shot.
+*: Shot fired, there's nothing there.
+X: shot fired, there was a ship.
+
+# Future Implantation
+<p>1- The game can be implemented more advanced by using client and server 
+  implementation using for example Socket-Server implementation
+   so that players connect to the game server and play.</p>
 
 
-# How to compile the project
+# Getting Started
 
-We use Apache Maven to compile and run this project. 
+This project built in a Java Maven Template and it
+use Apache Maven to compile and run. 
 
 You need to install Apache Maven (https://maven.apache.org/)  on your system. 
 
