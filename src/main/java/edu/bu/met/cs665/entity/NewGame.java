@@ -55,7 +55,7 @@ public class NewGame implements Game{
 		System.out.println("+++  There are two player                                +++");
 		System.out.println("+++  There are Three ships with one location each        +++");
 		System.out.println("+++  The ships are placed in 5*5 grid randomly           +++");
-		System.out.println("+++  Each player has a turn to gess a ship location      +++");
+		System.out.println("+++  Each player has a turn to guess a ship location      +++");
 		System.out.println("+++  The player who shoots three ships firt WIN the game +++");
 		System.out.println("++++++++++++++++++++ GAME STARTED HAVE fUN +++++++++++++++++");
 		System.out.println();
