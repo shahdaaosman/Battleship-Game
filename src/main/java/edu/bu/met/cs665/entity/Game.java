@@ -2,7 +2,7 @@ package edu.bu.met.cs665.entity;
 
 /**
  *  This is an interface is for Game process
- *  build the factory method paatern
+ *  build the factory method pattern
  * 
  * @author Sahad Osman
  *
