@@ -24,7 +24,7 @@ Board Legend:
 X: shot fired, there was a ship.
 
 # Future Implantation
-<p>1- The game can be implemented more advanced by using client and server 
+<p> The game can be implemented more advanced by using client and server 
   implementation using for example Socket-Server implementation
    so that players connect to the game server and play.</p>
 
