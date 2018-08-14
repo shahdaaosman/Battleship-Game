@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * This class represents a New Game
  * 
- * @author Use this
+ * @author Shahd Osman
  *
  */
 public class NewGame implements Game{

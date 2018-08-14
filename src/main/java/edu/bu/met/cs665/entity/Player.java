@@ -152,7 +152,7 @@ public class Player {
 	
 
     /**
-     * each player get a round to gess
+     * each player get a round to guess
      */
     public void playerRound() {
     	System.out.println("Player "+id+" turn :");
@@ -192,7 +192,6 @@ public class Player {
      */
 	public static void updateboard(int[] shoot, Board board){
     	int[][] theBoard =board.getBoard();
-    	//while(board.getShips()[shoot[0]][shoot[1]]== -1){
         if(hit(shoot,board))
         	 theBoard[shoot[0]][shoot[1]]=1;
         else

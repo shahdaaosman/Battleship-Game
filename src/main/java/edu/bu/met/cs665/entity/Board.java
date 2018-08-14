@@ -3,8 +3,9 @@ package edu.bu.met.cs665.entity;
 import java.util.Random;
 
 /**
+ * This class represents 
  * 
- * @author Use this
+ * @author Sahad Osman
  *
  */
 public class Board {
@@ -20,6 +21,7 @@ public class Board {
 	 * @param bordId
 	 */
 	public Board(int bordId) {
+		
 		this.bordId = bordId;
 		this.board = new int[5][5];
 		this.ships = new int [3][2];
