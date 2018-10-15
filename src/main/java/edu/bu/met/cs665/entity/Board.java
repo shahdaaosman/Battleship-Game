@@ -3,7 +3,7 @@ package edu.bu.met.cs665.entity;
 import java.util.Random;
 
 /**
- * This class represents 
+ * This class represents Bord
  * 
  * @author Sahad Osman
  *
